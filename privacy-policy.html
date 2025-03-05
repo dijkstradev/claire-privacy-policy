@@ -1,37 +1,122 @@
-Last Updated: March 05, 2025
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Claire the Explain Bear</title>
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: 'Fira Code', monospace;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for Claire the Explain Bear</h1>
+    <p><strong>Last Updated: March 05, 2025</strong></p>
+    <p>Claire the Explain Bear ("the Extension") is a Chrome extension developed to assist users in understanding text on webpages by providing detailed explanations powered by OpenAI's API. This privacy policy explains how we handle your data when you use the Extension.</p>
 
-Claire the Explain Bear ("the Extension") is a Chrome extension that helps users understand text by providing explanations powered by OpenAI's API. This privacy policy explains how we handle your data.
+    <h2>1. Data We Collect</h2>
+    <p>We collect the following data to provide the Extension's functionality:</p>
+    <ul>
+      <li><strong>Highlighted Text</strong>: When you highlight text on a webpage and click "Explain," the selected text is sent to OpenAI's API to generate an explanation.</li>
+      <li><strong>Page Content</strong>: Depending on your context settings (configurable in the options page), portions of the webpage content—or the entire page if the "Full Page" option is selected—may be sent to OpenAI to provide context for the explanation.</li>
+      <li><strong>Additional Prompt</strong>: If you provide an additional prompt in the "Explain Further" feature, this text is also sent to OpenAI to refine the explanation.</li>
+      <li><strong>OpenAI API Key</strong>: You provide your OpenAI API key in the Extension's options page, which is stored locally in Chrome storage (<code>chrome.storage.sync</code>) and used to authenticate requests to OpenAI. This key is not shared with any other parties.</li>
+    </ul>
 
-1. **Data We Collect**
-- **Highlighted Text**: When you highlight text on a webpage and click "Explain," the selected text is sent to OpenAI's API to generate an explanation.
-- **Page Content**: Depending on your context settings, portions of the webpage content (or the entire page) may be sent to OpenAI to provide context for the explanation.
-- **Additional Prompt**: If you provide an additional prompt in the "Explain Further" feature, this text is also sent to OpenAI.
-- **OpenAI API Key**: Your API key is stored locally in Chrome storage (`chrome.storage.sync`) and is used to authenticate requests to OpenAI. It is not shared with any other parties.
+    <h2>2. How We Use Your Data</h2>
+    <p>The data collected is used solely to provide the Extension’s core functionality:</p>
+    <ul>
+      <li>The highlighted text, page content, and additional prompts are sent to OpenAI's API to generate explanations, which are then displayed in a popup within the Extension.</li>
+      <li>The OpenAI API key is used to authenticate API requests to OpenAI on your behalf.</li>
+    </ul>
+    <p>We do not store or log any of this data on our servers. All processing happens between your browser and OpenAI's API.</p>
 
-2. **How We Use Your Data**
-- The highlighted text, page content, and additional prompts are sent to OpenAI's API to generate explanations.
-- We do not store or log any of this data on our servers. All processing happens between your browser and OpenAI's API.
+    <h2>3. Third-Party Services</h2>
+    <p>The Extension relies on the following third-party services:</p>
+    <ul>
+      <li><strong>OpenAI</strong>: The Extension uses OpenAI's API to generate explanations. Your highlighted text, page content, and additional prompts are sent to OpenAI for processing. OpenAI may retain this data as per their policies. Please review OpenAI's privacy policy at <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a> for details on how they handle your data.</li>
+      <li><strong>Flaticon</strong>: The bear icon used in the Extension is provided by Freepik via Flaticon. No user data is shared with Flaticon. The icon is credited in the Extension’s options page and Chrome Web Store listing.</li>
+    </ul>
 
-3. **Third-Party Services**
-- **OpenAI**: The Extension uses OpenAI's API to generate explanations. Your data (highlighted text, page content, additional prompts) is sent to OpenAI for processing. Please review OpenAI's privacy policy (https://openai.com/privacy) for details on how they handle your data.
-- **Flaticon**: The bear icon used in the Extension is provided by Freepik via Flaticon. No user data is shared with Flaticon.
+    <h2>4. Data Storage</h2>
+    <p>The Extension stores the following data locally on your device:</p>
+    <ul>
+      <li><strong>OpenAI API Key</strong>: Stored in Chrome storage (<code>chrome.storage.sync</code>) and encrypted by Chrome. This key is only accessed to make API requests to OpenAI.</li>
+      <li><strong>Context Settings</strong>: Your preferences for context settings (e.g., nearest paragraph, full page) are stored in Chrome storage to persist across sessions.</li>
+    </ul>
+    <p>No other user data (e.g., highlighted text, page content) is stored by the Extension. All such data is processed in real-time and discarded after the API request is complete.</p>
 
-4. **Data Storage**
-- Your OpenAI API key is stored locally in Chrome storage and is encrypted by Chrome. It is only accessed to make API requests on your behalf.
-- No other user data is stored by the Extension.
+    <h2>5. Data Sharing</h2>
+    <p>We do not share your data with any parties other than OpenAI, as described in Section 3. The Extension does not transmit your data to our servers or any other third parties beyond what is necessary for its functionality.</p>
 
-5. **Your Choices**
-- You can manage how much context is sent to OpenAI via the context settings in the Extension's options page.
-- You can remove your API key from the options page at any time to stop API requests.
+    <h2>6. Your Choices</h2>
+    <p>You have control over how the Extension handles your data:</p>
+    <ul>
+      <li><strong>Context Settings</strong>: You can configure how much webpage content is sent to OpenAI by adjusting the context settings in the Extension's options page. For example, selecting "Full Page" sends the entire page, while other options limit the context to smaller portions.</li>
+      <li><strong>API Key</strong>: You can remove your OpenAI API key from the options page at any time, which will prevent further API requests until a new key is provided.</li>
+      <li><strong>Usage</strong>: You can stop using the Extension at any time by uninstalling it from Chrome, which will remove all stored data (API key, settings) from Chrome storage.</li>
+    </ul>
 
-6. **Security**
-- We do not log or store your API key or any user data. However, since the API key is stored in Chrome storage, ensure your device is secure to prevent unauthorized access.
+    <h2>7. Security</h2>
+    <p>We take the following measures to protect your data:</p>
+    <ul>
+      <li>The OpenAI API key is stored in Chrome storage, which is encrypted by Chrome to prevent unauthorized access.</li>
+      <li>User inputs (highlighted text, additional prompts) are sanitized to prevent injection attacks before being sent to OpenAI.</li>
+      <li>No user data is logged or stored on our servers.</li>
+    </ul>
+    <p>However, since the API key is stored locally, you should ensure your device is secure to prevent unauthorized access to your browser data.</p>
 
-7. **Changes to This Policy**
-- We may update this privacy policy from time to time. Any changes will be reflected on this page.
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time to reflect changes in the Extension’s functionality or legal requirements. Any updates will be posted on this page, and the "Last Updated" date will be revised accordingly. We encourage you to review this policy periodically.</p>
 
-8. **Contact Us**
-- If you have any questions about this privacy policy, please contact us at [your-email@example.com].
-
----
-© 2025 Claire the Explain Bear. All rights reserved.
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions or concerns about this privacy policy or the Extension’s data practices, please contact us at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+  </div>
+  <footer>
+    <p>© 2025 Claire the Explain Bear. All rights reserved.</p>
+  </footer>
+</body>
+</html>
